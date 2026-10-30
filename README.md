@@ -68,3 +68,9 @@ The tests use fictional fixtures and block external requests. They do not connec
 - Code and artwork licensing must be settled before public distribution; see [release checklist](docs/RELEASE-CHECKLIST.md).
 
 This project is independent and is not an official Home Assistant or Samsung product.
+
+## Download this beta
+
+[Release v0.1.0-beta.2](https://github.com/bchristoph1985-crypto/lumo-cards/releases/tag/v0.1.0-beta.2) · [Source ZIP](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/tags/v0.1.0-beta.2.zip) · [Checks](https://github.com/bchristoph1985-crypto/lumo-cards/actions).
+
+Start with the German or English installation guide above. The self-contained card file is in `dist/`. This is an early beta; physical-device and HACS compatibility feedback is welcome.
