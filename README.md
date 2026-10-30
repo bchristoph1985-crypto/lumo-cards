@@ -2,7 +2,7 @@
 
 A floating companion and matching cards for **your own** Home Assistant dashboard. Choose your entities in visual editors; no JavaScript editing required for normal setup.
 
-**0.1.0-beta.2 – early beta, manually tested in a separate real Home Assistant dashboard. Not listed in the default HACS catalog. Code and robot artwork are MIT licensed.**
+**0.2.0-beta.1 – early beta, manually tested in a separate real Home Assistant dashboard. Not listed in the default HACS catalog. Code and robot artwork are MIT licensed.**
 
 [Deutsch: Installation](docs/INSTALLATION-DE.md) · [English: installation](docs/INSTALLATION-EN.md) · [TV guide / Fernseher](docs/TV-DE.md) · [English TV guide](docs/TV-EN.md)
 
@@ -15,6 +15,10 @@ A floating companion and matching cards for **your own** Home Assistant dashboar
 ## Two independent building blocks
 
 **Lumo · Companion** works in an existing dashboard or a new one. Configure the name, language, accent color, size, personality, speech bubble, custom greeting and reduced motion. Select any suitable `media_player` to make Lumo dance when it reports playback. A player is optional; the character also works on its own.
+
+**Optional dashboard trips (new in 0.2):** enable flight in the companion editor. Lumo can leave its card, visit other cards and return home. Choose the area and frequency, or start/recall a trip from the card header. The overlay is decorative and yields when you interact. Existing configurations keep flight off. [Flight settings and limits](docs/CONFIGURATION.md#dashboard-trips-02-beta).
+
+![Dashboard trip with fictional sample data](docs/preview-roaming.png)
 
 **Lumo · Status** displays a sensor, room climate, weather, light or media player in the matching style. Pick the card content first, then your own entity. No family names, local network addresses or household entity IDs are built in.
 
@@ -31,7 +35,7 @@ No Home Assistant token is requested. Data comes from the already signed-in HA f
 
 ## Manual test installation
 
-Copy `dist/lumo-cards.js` into your configuration's `www/lumo/` folder, then add `/local/lumo/lumo-cards.js?v=0.1.0-beta.2` as a JavaScript-module dashboard resource. Reload HA in the browser. Use the visual card picker to add **Lumo · Companion** or **Lumo · Status**. Detailed instructions and rollback are linked above.
+Copy `dist/lumo-cards.js` into your configuration's `www/lumo/` folder, then add `/local/lumo/lumo-cards.js?v=0.2.0-beta.1` as a JavaScript-module dashboard resource. Reload HA in the browser. Use the visual card picker to add **Lumo · Companion** or **Lumo · Status**. Detailed instructions and rollback are linked above.
 
 If `www` is created for the first time, HA may need a restart before serving it. Never put credentials in `www`; those files are served without authentication. [Official HA resource instructions](https://contributors.home-assistant.io/frontend/custom-ui/resources/).
 
@@ -57,7 +61,7 @@ npx playwright install chromium
 npm test
 ```
 
-The tests use fictional fixtures and block external requests. They do not connect to a home or switch devices. The GitHub workflow is prepared but has not run on GitHub.
+The tests use fictional fixtures and block external requests. They do not connect to a home or switch devices. GitHub Actions runs these checks automatically; see the Actions tab for each commit’s result.
 
 ## Current limits
 
@@ -71,6 +75,6 @@ This project is independent and is not an official Home Assistant or Samsung pro
 
 ## Download this beta
 
-[Release v0.1.0-beta.2](https://github.com/bchristoph1985-crypto/lumo-cards/releases/tag/v0.1.0-beta.2) · [Source ZIP](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/tags/v0.1.0-beta.2.zip) · [Checks](https://github.com/bchristoph1985-crypto/lumo-cards/actions).
+[Release v0.2.0-beta.1](https://github.com/bchristoph1985-crypto/lumo-cards/releases/tag/v0.2.0-beta.1) · [Source ZIP](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/tags/v0.2.0-beta.1.zip) · [Checks](https://github.com/bchristoph1985-crypto/lumo-cards/actions).
 
 Start with the German or English installation guide above. The self-contained card file is in `dist/`. This is an early beta; physical-device and HACS compatibility feedback is welcome.

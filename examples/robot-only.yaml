@@ -1,4 +1,5 @@
 type: custom:lumo-companion-card
+roaming: true
 name: Lumo
 language: auto
 color: aqua

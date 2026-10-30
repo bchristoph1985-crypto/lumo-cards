@@ -1,12 +1,12 @@
 # Install Lumo Cards in your Home Assistant
 
-Early beta 0.1.0-beta.2. [Download the GitHub source package](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/heads/main.zip). Not in the default HACS catalog; HACS installation is not yet tested.
+Early beta 0.2.0-beta.1. [Download the GitHub source package](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/heads/main.zip). Not in the default HACS catalog; HACS installation is not yet tested.
 
 ## Manual test setup
 
 1. Back up any previous Lumo file and the dashboard you plan to edit. Use a **new dashboard** for your first test.
 2. Copy `dist/lumo-cards.js` into `www/lumo/` in your HA configuration directory.
-3. Register `/local/lumo/lumo-cards.js?v=0.1.0-beta.2` as a JavaScript module in dashboard resources. Preserve an existing YAML-managed resource setup instead of switching its mode.
+3. Register `/local/lumo/lumo-cards.js?v=0.2.0-beta.1` as a JavaScript module in dashboard resources. Preserve an existing YAML-managed resource setup instead of switching its mode.
 4. Reload HA in the browser. Load only this bundle, not an older standalone Lumo card at the same time.
 5. Add **Lumo · Companion** or **Lumo · Status** in the card picker. Their visual editors let you choose your own entities and appearance.
 

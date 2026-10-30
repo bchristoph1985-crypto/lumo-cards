@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0-beta.1 – dashboard trips
+
+- Optional smooth trips across the active dashboard, visits near card edges, and return home.
+- Graphical controls for flight, area and frequency; manual start/recall in the card header.
+- One existing canvas/renderer moves into a pointer-transparent overlay; home layout stays reserved.
+- Yield on input, scroll, resize, dialogs, reduced motion, editing and navigation; no leftover traveler on another dashboard.
+- Prefer free landing space, shorten crowded stops and suppress their floating bubbles.
+- Existing configurations remain card-bound until explicitly enabled.
+- Added 16 dedicated roaming test groups and a graphical-editor regression.
+
+
 ## 0.1.0-beta.2 – local candidate
 
 - Fix: graphical edits preserve native Home Assistant layout and visibility metadata.

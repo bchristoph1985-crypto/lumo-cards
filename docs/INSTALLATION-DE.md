@@ -1,6 +1,6 @@
 # Lumo Cards in deinem Home Assistant
 
-Frühe Beta 0.1.0-beta.2. [GitHub-Quellpaket herunterladen](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/heads/main.zip). Noch nicht im HACS-Standardkatalog; die HACS-Installation ist noch nicht getestet.
+Frühe Beta 0.2.0-beta.1. [GitHub-Quellpaket herunterladen](https://github.com/bchristoph1985-crypto/lumo-cards/archive/refs/heads/main.zip). Noch nicht im HACS-Standardkatalog; die HACS-Installation ist noch nicht getestet.
 
 Du kannst nur den Roboter einbauen oder ein zusätzliches Dashboard mit den passenden Karten anlegen. Dein bisheriges Dashboard muss dafür nicht verändert werden.
 
@@ -9,7 +9,7 @@ Du kannst nur den Roboter einbauen oder ein zusätzliches Dashboard mit den pass
 1. Sichere eine eventuell bereits vorhandene Lumo-Ressource und die Konfiguration der Ansicht, die du bearbeiten möchtest. Für den ersten Test ein **neues Dashboard** verwenden.
 2. Kopiere `dist/lumo-cards.js` nach `www/lumo/lumo-cards.js` in deiner HA-Konfiguration. Die Datei enthält alle benötigten Grafiken bereits; keine weitere Datei oder externe Bibliothek ist nötig.
 3. Falls der Ordner `www` erstmals angelegt wird, ist laut HA-Dokumentation ein HA-Neustart nötig. Diesen vorher bewusst einplanen. Bei unserer lokalen Vorbereitung wurde kein HA neu gestartet.
-4. Unter Einstellungen → Dashboards → Ressourcen eine Ressource hinzufügen: URL `/local/lumo/lumo-cards.js?v=0.1.0-beta.2`, Typ **JavaScript-Modul**. Bei einer YAML-verwalteten Ressourcenliste den vorhandenen Verwaltungsweg nutzen.
+4. Unter Einstellungen → Dashboards → Ressourcen eine Ressource hinzufügen: URL `/local/lumo/lumo-cards.js?v=0.2.0-beta.1`, Typ **JavaScript-Modul**. Bei einer YAML-verwalteten Ressourcenliste den vorhandenen Verwaltungsweg nutzen.
 5. HA im Browser vollständig neu laden. Genau eine Version der Lumo-Ressource laden, keine alte Einzelkarte zusätzlich registrieren.
 
 Die Datei liegt anschließend unter `/local/`. Dort dürfen keine Passwörter, Tokens oder privaten Konfigurationsdateien abgelegt werden: Ressourcen sind ohne Anmeldung abrufbar. [Offizielle HA-Ressourcenanleitung](https://contributors.home-assistant.io/frontend/custom-ui/resources/).

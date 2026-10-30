@@ -1,13 +1,13 @@
 {
   "name": "lumo-ha-cards",
-  "version": "0.1.0-beta.2",
+  "version": "0.2.0-beta.1",
   "private": true,
   "description": "Configurable companion and status cards for Home Assistant",
   "license": "MIT",
   "scripts": {
     "build": "node build.cjs",
-    "test": "node tests/verify.cjs",
-    "check": "node --check src/cards.js"
+    "test": "node tests/verify.cjs && node tests/roaming.cjs",
+    "check": "node --check src/cards.js && node --check src/roaming.js"
   },
   "devDependencies": {
     "playwright": "1.62.1"
