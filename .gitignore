@@ -1,0 +1,10 @@
+node_modules/
+test-results/
+*.zip
+.env*
+*.p12
+*.pfx
+*.pem
+author-signature.xml
+signature1.xml
+profiles.xml

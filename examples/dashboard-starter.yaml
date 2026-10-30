@@ -1,0 +1,84 @@
+title: Lumo
+views:
+  - title: Home
+    path: home
+    type: sections
+    max_columns: 3
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: Your companion
+          - type: custom:lumo-companion-card
+            name: Lumo
+            language: auto
+            size: large
+            mood: lively
+            color: aqua
+            grid_options:
+              columns: full
+              rows: auto
+      - type: grid
+        cards:
+          - type: heading
+            heading: Your home
+          - type: custom:lumo-status-card
+            kind: weather
+            name: Weather
+            grid_options:
+              columns: full
+              rows: auto
+          - type: custom:lumo-status-card
+            kind: sensor
+            name: Your sensor
+            grid_options:
+              columns: full
+              rows: auto
+          - type: custom:lumo-status-card
+            kind: light
+            name: Lighting
+            grid_options:
+              columns: full
+              rows: auto
+  - title: Rooms
+    path: rooms
+    type: sections
+    max_columns: 3
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: Your rooms
+          - type: custom:lumo-companion-card
+            name: Lumo
+            size: small
+            grid_options:
+              columns: full
+              rows: auto
+          - type: custom:lumo-status-card
+            kind: climate
+            name: Room climate
+            grid_options:
+              columns: full
+              rows: auto
+  - title: Music
+    path: music
+    type: sections
+    max_columns: 2
+    sections:
+      - type: grid
+        cards:
+          - type: custom:lumo-companion-card
+            name: Lumo
+            mood: playful
+            grid_options:
+              columns: full
+              rows: auto
+      - type: grid
+        cards:
+          - type: custom:lumo-status-card
+            kind: media
+            name: Music
+            grid_options:
+              columns: full
+              rows: auto

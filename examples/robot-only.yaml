@@ -1,0 +1,10 @@
+type: custom:lumo-companion-card
+name: Lumo
+language: auto
+color: aqua
+size: medium
+mood: lively
+show_bubble: true
+greeting: ""
+reduced_motion: false
+# Optional: choose your own media_player in the visual editor.
